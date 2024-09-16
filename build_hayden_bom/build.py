@@ -127,7 +127,11 @@ with open(f"{home}/IdeaProjects/hayden-bom-plugin/build_hayden_bom/BomTemplate.t
             else:
                 out.write(l)
 
-subprocess.run("gradle generateCatalogAsToml", shell=True, cwd=f"{home}/IdeaProjects/version_catalog")
-subprocess.run(f"cp build/version-catalog/libs.versions.toml {home}/.gradle", shell=True, cwd=f"{home}/IdeaProjects/version_catalog")
-subprocess.run("gradle build", shell=True, cwd=f"{home}/IdeaProjects/hayden-bom-plugin")
-subprocess.run("gradle publishToMavenLocal", shell=True, cwd=f"{home}/IdeaProjects/hayden-bom-plugin")
+def run_prcesses():
+    subprocess.run("gradle generateCatalogAsToml", shell=True, cwd=f"{home}/IdeaProjects/version_catalog")
+    subprocess.run(f"cp build/version-catalog/libs.versions.toml {home}/.gradle", shell=True, cwd=f"{home}/IdeaProjects/version_catalog")
+    subprocess.run("gradle build", shell=True, cwd=f"{home}/IdeaProjects/hayden-bom-plugin")
+    subprocess.run("gradle publishToMavenLocal", shell=True, cwd=f"{home}/IdeaProjects/hayden-bom-plugin")
+
+run_prcesses()
+run_prcesses()

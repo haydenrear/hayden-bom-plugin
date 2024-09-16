@@ -66,7 +66,7 @@ open class Libraries {
         val opentelemtryJdbc = "io.opentelemetry.instrumentation:opentelemetry-jdbc:2.8.0-alpha"
         
 
-        val opentelemtryLogback = "io.opentelemetry.instrumentation:opentelemetry-logback-appender:2.8.0-alpha"
+        val opentelemtryLogback = "io.opentelemetry.instrumentation:opentelemetry-logback-appender-1.0:2.8.0-alpha"
         
 
         val opentelemtrySemConv = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-api-semconv:1.33.6-alpha"
@@ -90,7 +90,7 @@ open class Libraries {
         val springIntegrationBom = "org.springframework.integration:spring-integration-bom:6.2.1"
         
 
-        val vertexAi = "com.google.cloud:google-cloud-vertexai:1.5.0"
+        val vertexAi = "com.google.cloud:google-cloud-vertexai:1.9.0"
         }
 
 open class Plugins {
@@ -175,7 +175,7 @@ val externalBomsBundle = ExternalbomsBundle()
         open class OpentelemetryBundle {
                 val opentelemtrySemConv = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-api-semconv:1.33.6-alpha"
             
-                val opentelemtryLogback = "io.opentelemetry.instrumentation:opentelemetry-logback-appender:2.8.0-alpha"
+                val opentelemtryLogback = "io.opentelemetry.instrumentation:opentelemetry-logback-appender-1.0:2.8.0-alpha"
             
                 val opentelemtryInstrumentationApi = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-api:2.8.0"
             
